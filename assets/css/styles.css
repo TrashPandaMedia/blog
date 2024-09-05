@@ -1,0 +1,91 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--ctp-latte-base);
+  color: var(--ctp-latte-text);
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  margin: auto 25%;
+}
+
+header a h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: var(--ctp-latte-text);
+}
+
+header p {
+  color: var(--ctp-latte-subtext1);
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+
+main {
+  margin: auto 20%;
+}
+
+main h1 {
+  font-size: 1.5rem;
+}
+main h2 {
+  font-size: 1.25rem;
+}
+main span, main p, main li {
+  font-size: 1rem;
+}
+
+article h1 a, article h2 a, article h3 a, article h4 a {
+  text-decoration: none;
+}
+
+article a, main a, footer a {
+  color: var(--ctp-latte-blue);
+}
+
+article a:visited, main a:visited {
+  color: var(--ctp-latte-mauve);
+}
+
+.date {
+  color: var(--ctp-latte-subtext1);
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+footer ul li:not(:last-child)::after {
+  content: '•';
+  margin: auto 1rem;
+}
+
+footer li a {
+  text-decoration: none;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+}

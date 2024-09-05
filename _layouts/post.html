@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<a href="{{ site.url | relative_url }}">Back</a>
+<article>
+  <h1>{{ page.title }}</h1>
+  <span class="date">{{ page.date | date_to_long_string }}</span>
+  {{ page.content }}
+  {% assign author = site.data.authors[page.author] %}
+  <span>Published by {{ author.name }}</span>
+  {%- if page.tags.size > 0 -%}
+  <br>
+  <span>Tags: {{ page.tags | join: ', ' }}</span>
+  {%- endif -%}
+</article>

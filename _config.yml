@@ -1,0 +1,11 @@
+title: TrashPandaMedia
+description: >-
+  An indie studio based in Germany
+baseurl: '/blog'
+url: 'https://trashpandamedia.de'
+timezone: Europe/Berlin
+
+permalink: '/:slug'
+
+plugins:
+  - jekyll-feed

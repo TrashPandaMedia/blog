@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{%- for post in site.posts -%}
+  <article>
+    <h1>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h1>
+    <span class="date">{{ post.date | date_to_long_string }}</span>
+    {{ post.content }}
+    {% assign author = site.data.authors[post.author] %}
+    <span>Published by {{ author.name }}</span>
+    {%- if post.tags.size > 0 -%}
+    <br>
+    <span>Tags: {{ post.tags | join: ', ' }}</span>
+    {%- endif -%}
+    <hr>
+  </article>
+{%- endfor -%}
